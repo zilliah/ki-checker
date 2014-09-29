@@ -103,3 +103,8 @@ button {
 	font-size: 18px;
 	font-weight: bold;
 }
+
+#integ p {
+	float: left;
+	width: 25%;
+}
