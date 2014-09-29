@@ -13,199 +13,285 @@
 
 		<h1>KI Requirements Checker</h1>
 
+			<div id="no-print">
+			<div id="intro">
+				<ul>
+					<li>Welcome to the KI requirement checker!  This is still in development, and feedback is welcome, please <a href="mailto:kerry0smart@gmail.com?Subject=KI%20Checker%20Feedback">email me</a>.</li>
+					<li>Note: For now, please don't put any letters into course numbers - they won't be read properly.</li>
+				</ul>
+			</div>
 
-		<div id="integ">
-			<h3>INTEG Courses</h3>
-			<form>
-				<input type="checkbox"  id="integ0" value="INTEG 120">INTEG 120<br>
-				<input type="checkbox"  id="integ1" value="INTEG 121">INTEG 121<br>
-				<input type="checkbox"  id="integ2" value="INTEG 220">INTEG 220<br>
-				<input type="checkbox"  id="integ3" value="INTEG 221">INTEG 221<br>
-				<input type="checkbox"  id="integ4" value="INTEG 230">INTEG 230 [.5 course]<br>
-				<input type="checkbox"  id="integ5" alue="INTEG 231">INTEG 231 [.5 course]<br>
-				<input type="checkbox"  id="integ6" value="INTEG 320">INTEG 320<br>
-				<input type="checkbox"  id="integ7" value="INTEG 321">INTEG 321<br>
-				<input type="checkbox"  id="integ8" value="INTEG 420">INTEG 420<br>
-				<input type="checkbox"  id="integ9" value="INTEG 421">INTEG 421
-			</form>
 
-		</div>
-		<br>
+			<div id="integ">
+				<fieldset>
+					<legend>INTEG Courses</legend>
+					<form>
+						<p><input type="checkbox"  id="integ0" value="INTEG 120">INTEG 120<br></p>
+						<p><input type="checkbox"  id="integ1" value="INTEG 121">INTEG 121<br></p>
+						<p><input type="checkbox"  id="integ2" value="INTEG 220">INTEG 220<br></p>
+						<p><input type="checkbox"  id="integ3" value="INTEG 221">INTEG 221<br></p>
+						<p><input type="checkbox"  id="integ4" value="INTEG 230">INTEG 230 [.5 course]<br></p>
+						<p><input type="checkbox"  id="integ5" value="INTEG 231">INTEG 231 [.5 course]<br></p>
+						<p><input type="checkbox"  id="integ6" value="INTEG 320">INTEG 320<br></p>
+						<p><input type="checkbox"  id="integ7" value="INTEG 321">INTEG 321<br></p>
+						<p><input type="checkbox"  id="integ8" value="INTEG 420">INTEG 420<br></p>
+						<p><input type="checkbox"  id="integ9" value="INTEG 421">INTEG 421</p>
+					</form>
+				</fieldset>
+			</div>
+			<br>
 
-		<div id="sci">
-			<h3>Investigative Science</h3>
-			<p>Note: Any Completed lab for the course must be taken, but not all courses have labs [or something].<br>
-			Note: Any BIOL, CHEM, EARTH, MNS, PHYS course (or course crosslisted with any of these) is acceptable, check with advisor about other courses. <br>
-			Note: No SCI or SCIBUS courses count for this requirement.<br>
-			Note: more information about this requirement can be found <a href="https://uwaterloo.ca/knowledge-integration/investigative-science-course-options">here</a>.</p>
-			<p>Fill in the correct course code to get an accurate total of 200+ level courses.[?]</p>
-			<form>
-				<input type="text" id="sci1-text" maxlength="7" placeholder="PHYS" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="sci1-num" size="7" placeholder="120" max="999" >
-					<input type="checkbox" id="sci1-lab" value="true">Completed lab<br>
+			<div id="sci">
+				<fieldset>
+					<legend>Investigative Science</legend>
+					<ul>
+						<li>If a course has an accompanying lab, you must take the lab to satisfy this requirement.</li>
+						<li>Only check the lab box if the lab is listed as a separate course in the undergrad calender. </li>
+						<li>Any BIOL, CHEM, EARTH, MNS, PHYS course (or course crosslisted with any of these) is acceptable, check with advisor about other courses. </li>
+						<li>No SCI or SCIBUS courses count for this requirement.</li>
+						<li><a href="https://uwaterloo.ca/knowledge-integration/investigative-science-course-options">More information about this requirement.</a>.</li>
+					</ul>
+					<form>
+						<input type="text" id="sci1-text" maxlength="7" placeholder="PHYS" size="7" style="text-transform:uppercase"> 
+							<input type="number" id="sci1-num" size="7" placeholder="120" max="999" >
+							<input type="checkbox" id="sci1-lab" value="true">Completed lab<br>
+							
+						<input type="text" id="sci2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+							<input type="number" id="sci2-num" max="999">
+							<input type="checkbox" id="sci2-lab" value="true">Completed lab<br>
+
+						<input type="text" id="sci3-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+							<input type="number" id="sci3-num"  max="999">
+							<input type="checkbox" id="sci3-lab" value="true">Completed lab<br>
+					</form>
+				</fieldset>
+			</div>
+			<br>
+
+			<div id="Languages">
+				<fieldset>
+					<legend>Languages</legend>
+					<h4>English</h4>
+					<form>
+						<input type="text" id="engl-text" maxlength="7" size="7" placeholder="ENGL" style="text-transform:uppercase"> 
+							<input type="number" id="engl-num"  size="7" max="999" placeholder="208">
+					</form>
+					<h4>Second Language</h4>
+					<ul>
+						<li>Both courses must be taken in the same language.</li>
+						<li><a href="https://uwaterloo.ca/knowledge-integration/second-language-course-options">More information about this requirement.</a>.</li>
+					</ul>
+					<form>
+						<input type="text" id="lang1-text" maxlength="7" size="7" placeholder="FR" style="text-transform:uppercase"> 
+							<input type="number" id="lang1-num" max="999" placeholder="151"><br>
+						<input type="text" id="lang2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+							<input type="number" id="lang2-num" max="999">
+					</form>
+				</fieldset>
+			</div>
+			<br>
+
+			<div id="math-cs">
+				<fieldset>
+					<legend>Math and Computer Science</legend>
 					
-				<input type="text" id="sci2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="sci2-num" max="999">
-					<input type="checkbox" id="sci2-lab" value="true">Completed lab<br>
+					<h4>Computer Science</h4>
+					<ul>
+						<li>CS 100, 115, 135, 145, or 200 are suggested. Check with advisor for substitutes.</li>
+						<li><a href="https://uwaterloo.ca/knowledge-integration/computer-science-course-options">More information about this requirement.</a>.</li>
+					</ul>
+					<form>
+						<input type="text" id="cs-text" maxlength="7" size="7" placeholder="CS" style="text-transform:uppercase"> 
+							<input type="number" id="cs-num" max="999" placeholder="135">
+					</form>
 
-				<input type="text" id="sci3-text" maxlength="7" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="sci3-num"  max="999">
-					<input type="checkbox" id="sci3-lab" value="true">Completed lab<br>
-			</form>
-		</div>
-		<br>
+					<h4>Math</h4>
+					<ul>
+						<li>Any MATH course will do, check with advisor about acceptable substitutes.</li>
+						<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/theme-courses#Mathreq">More information about this requirement.</a>.</li>
+					</ul>
+					<form>
+						<input type="text" id="math1-text" maxlength="7" size="7" placeholder="MATH" style="text-transform:uppercase"> 
+							<input type="number" id="math1-num" max="999" placeholder="127"><br>
+						<input type="text" id="math2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+							<input type="number" id="math2-num" max="999">
+					</form>
 
-		<div id="Languages">
-			<h3>Languages</h3>
-			<h4>English</h4>
-			<form>
-				ENGL <input type="number" id="engl-num"  size="7" max="999">
-			</form>
-			<h4>Second Language</h4>
-			<p>Note: these must be for the same language.<br>
-			Note: more information about this requirement can be found <a href="https://uwaterloo.ca/knowledge-integration/second-language-course-options">here</a>.</p>
-			<form>
-				<input type="text" id="lang1-text" maxlength="7" size="7" placeholder="FR" style="text-transform:uppercase"> 
-					<input type="number" id="lang1-num" max="999" placeholder="151"><br>
-				<input type="text" id="lang2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="lang2-num" max="999">
-			</form>
-		</div>
-		<br>
+					<h4>Statistics</h4>
+					<ul>
+						<li><a href="https://uwaterloo.ca/knowledge-integration/statistics-course-options">More information about this requirement.</a>.</li>
+					</ul>
+					<form>
+						<input type="text" id="stat-text" maxlength="7" size="7" placeholder="STAT" style="text-transform:uppercase"> 
+							<input type="number" id="stat-num" max="999" placeholder="220">
+					</form>
+				</fieldset>
+			</div>
+			<br>
 
-		<div id="math-cs">
-			<h3>Math and Computer Science</h3>
+			<div id="other-breadth">
+				<fieldset>
+					<legend>Other Breadth Requirements</legend>
+					<form>
+						<input type="checkbox" id="bre1" value="PHIL 145">PHIL 145<br>
+						<input type="checkbox" id="bre2" value="SPCOM 223">SPCOM 223<br>
+					</form>
+
+					<h4>Ethics</h4>
+					<ul>
+						<li><a href="https://uwaterloo.ca/knowledge-integration/ethics-course-options">More information about this requirement.</a>.</li>
+					</ul>
+					<form>
+						<input type="text" id="bre3-text" maxlength="7" size="7" placeholder="INDEV" style="text-transform:uppercase"> 
+							<input type="number" id="bre3-num" max="999" placeholder="300">
+					</form>
+
+					<h4>Research Methods</h4>
+					<ul>
+						<li><a href="https://uwaterloo.ca/knowledge-integration/research-designmethods-course-options">More information about this requirement.</a>.</li>
+					</ul>
+					<form>
+						<input type="text" id="bre4-text" maxlength="7" size="7" placeholder="ENVS" style="text-transform:uppercase"> 
+							<input type="number" id="bre4-num" max="999" placeholder="178">
+					</form>
+				</fieldset>
+			</div>	
+			<br>
+
+			<div id="electives">
+				<fieldset>
+					<legend>Electives</legend>
+
+					<p>You can either enter the total number of elective courses or their course codes.  You can download a .csv file of your courses [this only works in chrome atm].</p>
+
+					<div>
+						<button type="button" id="lazy">Pfft, I'll just do totals</button>
+						<button type="button" id="full">Yes, I want to put in ALL THE DATA</button>
+					</div>
+
+					<br>
+					<div id="elective-options">
+						<div id="short-form">
+							<form>
+								<ul><li>Enter total number of <b>courses</b>, not credits.</li></ul>
+								Total number of elective coures (not including labs):<input type="number" id="elect-total" max="99" placeholder="6"><br>
+								Number of elective coures at 200-level or above (again, not including labs):<input type="number" id="elect-upper" max="99" placeholder="3"><br><br>
+								Number of labs (or other 0.25 credit courses):<input type="number" id="elect-labs" max="99" placeholder="2"><br>
+								How many of those labs were level 200 or above?<input type="number" id="elect-labs-upper" max="99" placeholder="1"><br>
+								<ul>
+									<li>Note: only 4 lab courses (1.0 credits) count towards your total course count.</li>
+									<li>If you have other courses worth 0.25, they may not be counted, so you'll probably want to download the data and fix it up in a spreadsheet.</li>
+								</ul>
+							</form>
+						</div>
+
+						<div id="long-form">
+							<form id="long-form-input">
+								<input type="text" id="elec0-text" maxlength="7" size="7" placeholder="PSYCH" style="text-transform:uppercase"> 
+									<input type="number" id="elec0-num" max="999" placeholder="101"> | 
+								<input type="text" id="elec1-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+									<input type="number" id="elec1-num" max="999"> |
+								<input type="text" id="elec2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+									<input type="number" id="elec2-num" max="999"> | 
+								<button type="button" id="add-more">Add more courses</button>
+								<button type="button" id="add-labs">Add lab courses</button><br>
+							</form>
+
 			
-			<h4>Computer Science</h4>
-			<p>Note: CS 100, 115, 135, or 145 are suggested. Check with advisor for substitutes.<br>
-			Note: more information about this requirement can be found <a href="https://uwaterloo.ca/knowledge-integration/computer-science-course-options">here</a>.</p>
-			<form>
-				<input type="text" id="cs-text" maxlength="7" size="7" placeholder="CS" style="text-transform:uppercase"> 
-					<input type="number" id="cs-num" max="999" placeholder="135">
-			</form>
+							<form id="lab-input">
+								<h4>Labs and other 0.25 credit courses:</h4>
+								<ul>
+									<li>Only the first 4 lab courses you take (including labs from science courses) count towards your total number of courses.  </li>
+									<li>Only include labs which are listed as a separate course, weighted at 0.25 credits.  <b>Don't</b> include labs which are included in a 0.5 weight course (eg "BIOL 302 LAB,LEC 0.50"). </li>
+									<li>Courses including labs which are weighted as 0.75 <b>should</b> be entered again here.  For example, "CHE 100 LAB,LEC,TST,TUT 0.75" should be entered into both this section and the previous section.</li>
+									<li>Non-lab courses which are also weighted at 0.25 credits (eg, choir) can be included here.</li>
+									<li>Remember not to include letter in the course code number (eg, for BIOL 240L, enter BIOL 240)</li>
+								</ul>
+								<input type="text" id="lab0-text" maxlength="7" size="7" placeholder="BIOL" style="text-transform:uppercase"> 
+									<input type="number" id="lab0-num" max="999" placeholder="240"> | 
+								<input type="text" id="lab1-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+									<input type="number" id="lab1-num" max="999"> |
+								<input type="text" id="lab2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+									<input type="number" id="lab2-num" max="999"> | 
+							</form>
 
-			<h4>Math</h4>
-			<p>Note: Any MATH course will do, check with advisor about acceptable substitutes.<br>
-			Note: more information about this requirement can be found <a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/theme-courses#Mathreq">here</a>.</p>
-			<form>
-				<input type="text" id="math1-text" maxlength="7" size="7" placeholder="MATH" style="text-transform:uppercase"> 
-					<input type="number" id="math1-num" max="999" placeholder="127"><br>
-				<input type="text" id="math2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="math2-num" max="999">
-			</form>
+						</div>
 
-			<h4>Statistics</h4>
-			<p>Note: more information about this requirement can be found <a href="https://uwaterloo.ca/knowledge-integration/statistics-course-options">here</a>.
-			<form>
-				<input type="text" id="stat-text" maxlength="7" size="7" placeholder="STAT" style="text-transform:uppercase"> 
-					<input type="number" id="stat-num" max="999" placeholder="220">
-			</form>
+
+					</div>
+				</fieldset>
+			</div>
+			<br>
+
+			<div>
+				<fieldset>
+					<legend>Averages</legend>
+					<p>Note: these can be found on your transcript: run "unofficial transcript" on Quest.</p>
+					<form>
+						Enter your faculty (KI) average: <input type="number" id="ki-avg" id="ki-avg" max="100" placeholder="75"><br>
+						Enter your overall average: <input type="number" id="over-avg" id="over-avg" max="100">
+					</form>
+				</fieldset>
+			</div>
+			<br>
+
+			<div id="submit">
+				<button type="button">Calculate Results</button>
+			</div>
 		</div>
 		<br>
 
-		<div id="other-breadth">
-			<h3>[etc more breadth reqs]</h3>
-			<input type="checkbox" id="bre1" value="PHIL 145">PHIL 145<br>
-			<input type="checkbox" id="bre2" value="SPCOM 223">SPCOM 223<br>
-
-			<h4>Ethics</h4>
-			<p>Note: more information about this requirement can be found <a href="https://uwaterloo.ca/knowledge-integration/ethics-course-options">here</a>.</p>
-			<form>
-				<input type="text" id="bre3-text" maxlength="7" size="7" placeholder="INDEV" style="text-transform:uppercase"> 
-					<input type="number" id="bre3-num" max="999" placeholder="300">
-			</form>
-
-			<h4>Research Methods</h4>
-			<p>Note: more information about this requirement can be found <a href="https://uwaterloo.ca/knowledge-integration/research-designmethods-course-options">here</a>.</p>
-			<form>
-				<input type="text" id="bre4-text" maxlength="7" size="7" placeholder="ENVS" style="text-transform:uppercase"> 
-					<input type="number" id="bre4-num" max="999" placeholder="178">
-			</form>
-		</div>	
-
-		<div id="electives">
-			<h3>Electives</h3>
-
-			<p>[add option to choose to enter number of courses or enter all course codes - just [put in both for now]</p>
-			<form>
-				Number of elective coures (not including labs):<input type="number" id="elect-total" max="99" placeholder="6"><br>
-				Number of elective coures at 200-level or above:<input type="number" id="elct-200" max="99" placeholder="3"><br>
-				Number of labs:<input type="number" id="elect-labs" max="99" placeholder="1"><br>
-				Note: only 4 lab courses (1.0 units) count towards course total. 
-			</form>
-
-			<p>[Option2:]</p>
-
-			<form>
-				<input type="text" id="elec1-text" maxlength="7" size="7" placeholder="PSYSC" style="text-transform:uppercase"> 
-					<input type="number" id="elec1-num" max="999" placeholder="101">
-				<input type="text" id="elec2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="elec2-num" max="999">
-				<input type="text" id="elec3-text" maxlength="7" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="elec3-num" max="999">
-				<input type="text" id="elec4-text" maxlength="7" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="elec4-num" max="999">
-				<input type="text" id="elec5-text" maxlength="7" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="elec5-num" max="999">
-				<input type="text" id="elec6-text" maxlength="7" size="7" style="text-transform:uppercase"> 
-					<input type="number" id="elec6-num" max="999">
-			</form>
-
-
-			<p>[add more boxes automatically, but number to start with depends on the syling]</p>
-
-		</div>
-
-		<div>
-			<h3>Averages</h3>
-			<p>Note: these can be found on your transcript: run "unofficial transcript" on Quest.</p>
-			<form>
-				
-				Enter your overall average: <input type="number" id="over-avg" id="over-avg" max="100" placeholder="75"><br>
-				Enter your faculty  average: <input type="number" id="ki-avg" id="ki-avg" max="100">
-			</form>
-
-		</div>
-
-		<div id="submit">
-			<button type="button">Done!</button>
-		</div>
-
-		<!--below this is "results" page!  set to hide until button is pressed-->
+		<!--below this is "results" page - set to hide until button is pressed-->
 		<div id="results">
-			<h3>Results</h3>
-			
-			<div id="courses-left">
-				<h4>Courses Remaining</h4>
-				<ul>
-					<li>[list courses still need to take]</li>
-					<li>You still need to take XX elective courses.</li>
-					<li>You still need to take YY elective courses at level 200 or greater.</li>
-				</ul>
+			<fieldset>
+				<legend>Results</legend>
 
+				<div id="grad">
+					<p>It looks like you've completed all the requirements!  Good job!  If you're ready to graduate, check <a href="https://uwaterloo.ca/environment/current-undergraduate-students/about-graduate">here</a> for the list of requirements.</p>
+				</div>
 				
-			</div>
-			
-			<div id="warnings">
-				<ul>
-					<li id="avg-ki-ok-warn">Your faculty average is still acceptable, but remember it needs to stay at 75% or more.</li>
-					<li id="avg-ki-bad-warn">Your faculty average is 75 or below!  You need a 75% average to remain in the program [maybe], make an appointment with your advisor to discuss it.</li>
-					<li id="avg-ovr-ok-warn">Your overall average is still acceptable, but remember it needs to stay at 65% or more.</li>
-					<li id="avg-ovr-bad-warn">Your overall average is 65 or below!  You need a 65% average to remain in the program [maybe], make an appointment with your advisor to discuss it.</li>
-					<li id="sci-warn">One or more of your science courses aren't in [automatically ok depts], make sure they are acceptable [consult advisor].</li>
-					<li id="fr-warn">Your second language courses are in different languages. You need to take 2 courses in a single language for this requirement.</li>
-					<li id="cs-warn">Your CS course is not in the pre-approved course list.  Make sure to consult an advisor [to make sure it counts].  But since it's a CS-labelled course, you're probably fine.</li>
-					<li id="cs-non-warn">Your CS course is not in the pre-approved course list, or a CS-labelled course.  Make sure to consult an advisor [to make sure it counts].</li>
-					<li id="math-warn">One or more of your math courses are not MATH-labelled courses. Make sure you've checked with an advisor [to make sure it counts].</li>					
-					<li>Remember, it is your responsibility to make sure the courses you've entered fulfill the requirements.  This program won't notice if, for example, you put a PSYCH course in for the language requirement.  It'll warn you in some cases, but not all.</li>
-				</ul>
-			</div>
+				<div id="courses-left">
+					<h4>Courses Remaining</h4>
+					<ul>
+						<li>You have completed <b><span id="finished" display="inline"></span></b> courses (<b><span id="finished-credits" display="inline"></span></b> units).  
+						<li>You still need to take <b><span id="totals" display="inline"></span></b> total courses (<b><span id="totals-credits" display="inline"></span></b> units). <span id="totals-complete"></span></li>
+						<li id="reqs-incomplete">You still need to take these required courses:</li>
+							<ul id="remaining"></ul>
+						<li id="reqs-complete">You have completed all the [specific required courses].  Good job!</li>
+						<li>You still need to take <b><span id="uppers"></span></b> courses (<b><span id="uppers-credits"></span></b> credits) at level 200 or greater.  [some of these will be from reqs, but i can't tell you how many b/c i don't know what you're taking] <span id="uppers-complete"></span></li>
+					</ul>
+				</div>
 
-			<div id="get-data">
-				<button type="button">Download data as [.csv??]</button>
-				<button type="button" onclick="print()">Print results</button>
-			</div>
+				<div>
+					<h4>Warnings</h4>
+					<ul>
+						<li class="warnings" name="boxWarn" id="warn0">One or more of your boxes had [only one box filled in] or [a number box with a letter in it] - this wasn't counted as a course.  Double check and run again if you meant to fill this in.</li>
+						<li class="warnings" name="smallNum" id="warn1">One or more of your course codes was below 100: these courses are generally not taken for credit, and will not be counted.</li>
+						<li class="warnings" name="avgKiOk" id="warn2">Your faculty average is still acceptable, but remember it needs to stay at 75% or more.</li>
+						<li class="warnings" name="avgKiBad" id="warn3">Your faculty average is 75 or below!  You need a 75% average to remain in the program [maybe], make an appointment with your advisor to discuss it.</li>
+						<li class="warnings" name="avgOvrOk" id="warn4">Your overall average is still acceptable, but remember it needs to stay at 65% or more.</li>
+						<li class="warnings" name="avgOvrBad" id="warn5">Your overall average is 65 or below!  You need a 65% average to remain in the program [maybe], make an appointment with your advisor to discuss it.</li>
+						<li class="warnings" name="noKiAvg" id="warn6">You didn't enter your faculty average.</li>
+						<li class="warnings" name="noOvrAvg" id="warn7">You didn't enter your overall average.</li>
+						<li class="warnings" name="sciWarn" id="warn8">One or more of your science courses aren't in [automatically ok depts], make sure they are acceptable [consult advisor].</li>
+						<li class="warnings" name="sciBus" id="warn9">One of your science courses is a SCI or SCIBUS labelled course: these courses do not count towards the investigative science requirement.</li>
+						<li class="warnings" name="mathWarn" id="warn10">Your english course is not a ENGL-labelled course. Make sure you've checked with an advisor [to make sure it counts].</li>
+						<li class="warnings" name="frWarn" id="warn11">Your second language courses are in different languages. You need to take 2 courses in a single language for this requirement.</li>
+						<li class="warnings" name="csWarn" id="warn12">Your CS course is not in the pre-approved course list.  Make sure to consult an advisor [to make sure it counts].  But since it's a CS-labelled course, you're probably fine.</li>
+						<li class="warnings" name="csNon" id="warn13">Your CS course is not in the pre-approved course list, or a CS-labelled course.  Make sure to consult an advisor [to make sure it counts].</li>
+						<li class="warnings" name="mathWarn" id="warn14">One or more of your math courses are not MATH-labelled courses. Make sure you've checked with an advisor [to make sure it counts].</li>
+						<li>Remember, it is your responsibility to make sure the courses you've entered fulfill the requirements.  This program won't notice if, for example, you put a PSYCH course in for the language requirement.  It'll warn you in many cases, but not all.</li>
+					</ul>
+				</div>
 
+				<div id="get-data">
+					<button id="dl-csv" type="button">Download data as .csv</button>
+					<button type="button" onclick="print()">Print results</button>
+					<p>Note: downloading only supported in Chrome atm.</p>
+				</div>
+
+
+			</fieldset>
 		</div>
 
 	</body>
