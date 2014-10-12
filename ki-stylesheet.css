@@ -75,6 +75,8 @@ h1 {
 
 h4 {
 	padding-left: 20px;
+	clear: both;
+	margin-bottom: 10px;
 }
 
 a {
@@ -90,8 +92,15 @@ fieldset {
 	background-color: #ffffff;
 }
 
-input.checkbox {
+input {
+	margin-bottom: 10px;
+	width: 70px;
+}
+
+input[type=checkbox] {
 	font-weight: bold;
+	width: 16px;
+
 }
 
 legend {
@@ -103,16 +112,16 @@ button {
 	text-align: center;
 }
 
+label {
+	float: left;
+	width: 210px;
+	padding-top: 5px;
+}
+
 #submit {
 	text-align: center;
 	font-size: 18px;
 	font-weight: bold;
-}
-
-#integ p {
-	float: left;
-	width: 25%;
-	text-align: center;
 }
 
 .double {
@@ -121,18 +130,19 @@ button {
 	padding: 0px 20px 20px 20px;
 }
 
-.double form {
-	width: 300px;
+form.double {
+	width: 250px;
+	padding-left: 40px;
 }
 
-.double ul {
+ul.double {
 	padding-right: 0px;
 	padding-left: 20px;
 	margin-right: 0px;
 	margin-left: 10px;
 	margin-top: 0px;
-	width: 400px;
-	padding: 20px 0px 0px 20px;
+	width: 430px;
+	padding: 0px 0px 0px 20px;
 
 }
 
@@ -140,9 +150,32 @@ button {
 	padding: 0px 20px 20px 20px;
 }
 
+.centre {
+	margin: auto;
+ 	display: inline;
+}
+
+#integ p {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+#integ p #integ-para {
+	margin-left: -10px;
+}
 
 #sci-form {
-	padding: 20px 0px 0px 20px;
+	padding: 20px 0px 0px 0px;
+}
+
+#sci-notes {
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+
+#sci-ul {
+	padding-bottom: 20px;
 }
 
 #lang-form {
@@ -150,3 +183,28 @@ button {
 }
 
 
+ #breadth {
+ 	padding: 20px 0px 0px 0px;
+ 	margin-left: 
+ }
+
+#bre1 {
+	margin-left: 18px;
+}
+
+#averages ul {
+	padding-top: 15px;
+}
+
+#averages form {
+	padding-top: 10px;
+}
+
+#averages label {
+	width:160px;
+	text-align: right;
+	margin-right: 5px;
+}
+
+#averages form.double {
+}
