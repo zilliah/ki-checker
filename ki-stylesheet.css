@@ -155,6 +155,7 @@ ul.double {
  	display: inline;
 }
 
+/*integ*/
 #integ p {
 	float: left;
 	width: 25%;
@@ -165,6 +166,7 @@ ul.double {
 	margin-left: -10px;
 }
 
+/*sci*/
 #sci-form {
 	padding: 20px 0px 0px 0px;
 }
@@ -178,11 +180,12 @@ ul.double {
 	padding-bottom: 20px;
 }
 
+/*lang*/
 #lang-form {
 	padding-bottom: 20px;
 }
 
-
+/*breadth*/
  #breadth {
  	padding: 20px 0px 0px 0px;
  	margin-left: 
@@ -192,6 +195,20 @@ ul.double {
 	margin-left: 18px;
 }
 
+/*electives*/
+#electives button {
+	text-align: center;
+}
+
+#long-form-input {
+	margin-left: 40px;
+}
+
+#lab-input {
+	margin-left: 40px;
+}
+
+/*averages*/
 #averages ul {
 	padding-top: 15px;
 }
@@ -206,5 +223,11 @@ ul.double {
 	margin-right: 5px;
 }
 
-#averages form.double {
+#averages input {
+	text-align: right;
+	width: 45px;
 }
+
+
+
+/**/

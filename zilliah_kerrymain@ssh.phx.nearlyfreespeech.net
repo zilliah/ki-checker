@@ -18,7 +18,6 @@
 				<fieldset>
 					<ul>
 						<li>Welcome to the KI requirement checker!  This is still in development and feedback is welcome, please <a href="mailto:kerry0smart@gmail.com?Subject=KI%20Checker%20Feedback">email me</a>.</li>
-						<li>If you'd like to contribute to this project, it can be found on <a href="https://github.com/zilliah/ki-checker">Github</a>.</li>
 						<li><b>Note:</b> For now, please don't put any letters into course numbers - they won't be read properly.</li>
 					</ul>
 				</fieldset>
@@ -30,7 +29,7 @@
 				<fieldset>
 					<legend>INTEG Courses</legend>
 					<form>
-						<p id="integ-para"><input type="checkbox"  id="integ0" value="INTEG 120">INTEG 120<br>
+						<p><input type="checkbox"  id="integ0" value="INTEG 120">INTEG 120<br>
 						<input type="checkbox"  id="integ1" value="INTEG 121">INTEG 121<br></p>
 
 						<p><input type="checkbox"  id="integ2" value="INTEG 220">INTEG 220<br>
@@ -54,31 +53,30 @@
 					
 					<div id="sci-form">
 						<form  class="double" >
-							<input type="text" id="sci1-text" maxlength="7" placeholder="PHYS" style="text-transform:uppercase"> 
-								<input type="number" id="sci1-num" placeholder="120" max="999" >
+							<input type="text" id="sci1-text" maxlength="7" placeholder="PHYS" size="7" style="text-transform:uppercase"> 
+								<input type="number" id="sci1-num" size="7" placeholder="120" max="999" >
 								<input type="checkbox" id="sci1-lab" value="true">Lab<br>
 								
-							<input type="text" id="sci2-text" maxlength="7" style="text-transform:uppercase"> 
+							<input type="text" id="sci2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
 								<input type="number" id="sci2-num" max="999">
 								<input type="checkbox" id="sci2-lab" value="true">Lab<br>
 
-							<input type="text" id="sci3-text" maxlength="7" style="text-transform:uppercase"> 
+							<input type="text" id="sci3-text" maxlength="7" size="7" style="text-transform:uppercase"> 
 								<input type="number" id="sci3-num"  max="999">
 								<input type="checkbox" id="sci3-lab" value="true">Lab<br>
 						</form>
 					</div>
 
 					<div id="sci-notes">
-						<ul  class="double" id="sci-ul">
-							<li>If a course has an accompanying lab, you must take the lab to satisfy this requirement</li>
-							<li>Only check the lab box if the lab is listed as a separate course in the undergrad calender </li>
-							<li>Any BIOL, CHEM, EARTH, MNS, PHYS course (or crosslisted course) is acceptable, check with advisor about acceptable substitutes</li>
-							<li>No SCI or SCIBUS courses count towards this requirement</li>
-							<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/breadth-courses#Isreq">More information</a></li>
+						<ul  class="double" >
+							<li>If a course has an accompanying lab, you must take the lab to satisfy this requirement.</li>
+							<li>Only check the lab box if the lab is listed as a separate course in the undergrad calender. </li>
+							<li>Any BIOL, CHEM, EARTH, MNS, PHYS course (or crosslisted course) is acceptable, check with advisor about other courses. </li>
+							<li>No SCI or SCIBUS courses count towards this requirement.</li>
+							<li><a href="https://uwaterloo.ca/knowledge-integration/investigative-science-course-options">More information</a></li>
 						</ul>
 					</div>
 				</fieldset>
-
 			</div>
 			<br>
 
@@ -88,28 +86,23 @@
 
 					<div id="english">
 						<h4>English</h4>
-						<form class="double">
-							<input type="text" id="engl-text" maxlength="7" placeholder="ENGL" style="text-transform:uppercase"> 
-								<input type="number" id="engl-num"  max="999" placeholder="208">
+						<form class="single">
+							<input type="text" id="engl-text" maxlength="7" size="7" placeholder="ENGL" style="text-transform:uppercase"> 
+								<input type="number" id="engl-num"  size="7" max="999" placeholder="208">
 						</form>
-						<ul class="double">
-							<li>Any 100-level or 200-level ENGL course will do</li>
-							<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/breadth-courses#Lanreq">More information</a></li>
-						</ul>
-						<br>
 					</div>
 
 					<div id="sec-lang">
 						<h4>Second Language</h4>
 						<form class="double" id="lang-form">
-							<input type="text" id="lang1-text" maxlength="7" placeholder="FR" style="text-transform:uppercase"> 
+							<input type="text" id="lang1-text" maxlength="7" size="7" placeholder="FR" style="text-transform:uppercase"> 
 								<input type="number" id="lang1-num" max="999" placeholder="151"><br>
-							<input type="text" id="lang2-text" maxlength="7" style="text-transform:uppercase"> 
+							<input type="text" id="lang2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
 								<input type="number" id="lang2-num" max="999">
 						</form>
 						<ul class="double">
-							<li>Both courses must be taken in the same language</li>
-							<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/breadth-courses#Lanreq">More information</a></li>
+							<li>Both courses must be taken in the same language.</li>
+							<li><a href="https://uwaterloo.ca/knowledge-integration/second-language-course-options">More information</a></li>
 						</ul>
 					</div>
 
@@ -125,12 +118,12 @@
 					<div>
 						<h4>Computer Science</h4>
 						<form class="double">
-							<input type="text" id="cs-text" maxlength="7" placeholder="CS" style="text-transform:uppercase"> 
+							<input type="text" id="cs-text" maxlength="7" size="7" placeholder="CS" style="text-transform:uppercase"> 
 								<input type="number" id="cs-num" max="999" placeholder="135">
 						</form>
-						<ul class="double" id="lang-form">
-							<li>CS 100, 115, 135, 145, or 200 are suggested, check with advisor about acceptable substitutes</li>
-							<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/breadth-courses#CSreq">More information</a></li>
+						<ul class="double">
+							<li>CS 100, 115, 135, 145, or 200 are suggested. Check with advisor for substitutes.</li>
+							<li><a href="https://uwaterloo.ca/knowledge-integration/computer-science-course-options">More information</a></li>
 						</ul>
 						<br>
 					</div>
@@ -138,14 +131,14 @@
 					<div>
 						<h4>Math</h4>
 						<form class="double">
-							<input type="text" id="math1-text" maxlength="7" placeholder="MATH" style="text-transform:uppercase"> 
+							<input type="text" id="math1-text" maxlength="7" size="7" placeholder="MATH" style="text-transform:uppercase"> 
 								<input type="number" id="math1-num" max="999" placeholder="127"><br>
-							<input type="text" id="math2-text" maxlength="7" style="text-transform:uppercase"> 
+							<input type="text" id="math2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
 								<input type="number" id="math2-num" max="999">
 						</form>
 						<ul class="double">
-							<li>Any MATH course will do, check with advisor about acceptable substitutes</li>
-							<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/breadth-courses#Mathreq">More information</a></li>
+							<li>Any MATH course will do, check with advisor about acceptable substitutes.</li>
+							<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/theme-courses#Mathreq">More information</a></li>
 						</ul>
 					</div>
 
@@ -153,11 +146,12 @@
 						<h4>Statistics</h4>
 						
 						<form class="double">
-							<input type="text" id="stat-text" maxlength="7" placeholder="STAT" style="text-transform:uppercase"> 
+							<input type="text" id="stat-text" maxlength="7" size="7" placeholder="STAT" style="text-transform:uppercase"> 
 								<input type="number" id="stat-num" max="999" placeholder="220">
 						</form>
+
 						<ul class="double">
-							<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/breadth-courses#PSreq">More information</a></li>
+							<li><a href="https://uwaterloo.ca/knowledge-integration/statistics-course-options">More information</a></li>
 						</ul>
 					</div>
 				</fieldset>
@@ -167,27 +161,27 @@
 			<div id="other-breadth">
 				<fieldset>
 					<legend>Other Breadth Requirements</legend>
-					<form id="breadth">
-						<p class="double"><input type="checkbox" id="bre1" value="PHIL 145">PHIL 145<br></p>
-						<p class="double"><input type="checkbox" id="bre2" value="SPCOM 223">SPCOM 223<br></p>
+					<form>
+						<input type="checkbox" id="bre1" value="PHIL 145">PHIL 145<br>
+						<input type="checkbox" id="bre2" value="SPCOM 223">SPCOM 223<br>
 					</form>
 
 					<h4>Ethics</h4>
 					<form class="double">
-						<input type="text" id="bre3-text" maxlength="7" placeholder="INDEV" style="text-transform:uppercase"> 
+						<input type="text" id="bre3-text" maxlength="7" size="7" placeholder="INDEV" style="text-transform:uppercase"> 
 							<input type="number" id="bre3-num" max="999" placeholder="300">
 					</form>
 					<ul class="double">
-						<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/breadth-courses#Ethicsreq">More information</a></li>
+						<li><a href="https://uwaterloo.ca/knowledge-integration/ethics-course-options">More information</a></li>
 					</ul>
 
 					<h4>Research Methods</h4>
 					<form class="double">
-						<input type="text" id="bre4-text" maxlength="7" placeholder="ENVS" style="text-transform:uppercase"> 
+						<input type="text" id="bre4-text" maxlength="7" size="7" placeholder="ENVS" style="text-transform:uppercase"> 
 							<input type="number" id="bre4-num" max="999" placeholder="178">
 					</form>
 					<ul class="double">
-						<li><a href="https://uwaterloo.ca/knowledge-integration/current-undergraduates/breadth-courses#RdMreq">More information</a></li>
+						<li><a href="https://uwaterloo.ca/knowledge-integration/research-designmethods-course-options">More information</a></li>
 					</ul>
 					
 				</fieldset>
@@ -198,11 +192,11 @@
 				<fieldset>
 					<legend>Electives</legend>
 
-					<p>You can either enter the total number of elective courses or individual course codes.</p>
+					<ul><li>You can either enter the total number of elective courses or individual course codes.</li></ul>
 
 					<div class="centre">
 						<button type="button" id="lazy">Total courses</button>
-						<button type="button" id="full">Individual course codes</button><br>
+						<button type="button" id="full">Individual course codes</button>
 					</div>
 
 					<br>
@@ -223,14 +217,14 @@
 
 						<div id="long-form">
 							<form id="long-form-input">
-								<input type="text" id="elec0-text" maxlength="7" placeholder="PSYCH" style="text-transform:uppercase"> 
-									<input type="number" id="elec0-num" max="999" placeholder="101"> | 
-								<input type="text" id="elec1-text" maxlength="7" style="text-transform:uppercase"> 
-									<input type="number" id="elec1-num" max="999"> |
-								<input type="text" id="elec2-text" maxlength="7" style="text-transform:uppercase"> 
-									<input type="number" id="elec2-num" max="999"> | 
 								<button type="button" id="add-more">Add more courses</button>
 								<button type="button" id="add-labs">Add lab courses</button><br>
+								<input type="text" id="elec0-text" maxlength="7" size="7" placeholder="PSYCH" style="text-transform:uppercase"> 
+									<input type="number" id="elec0-num" max="999" placeholder="101"> | 
+								<input type="text" id="elec1-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+									<input type="number" id="elec1-num" max="999"> |
+								<input type="text" id="elec2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
+									<input type="number" id="elec2-num" max="999"> | 
 							</form>
 
 			
@@ -243,11 +237,11 @@
 									<li>Non-lab courses which are also weighted at 0.25 credits (eg, choir) can be included here.</li>
 									<li>Remember not to include letter in the course code number (eg, for BIOL 240L, enter BIOL 240)</li>
 								</ul>
-								<input type="text" id="lab0-text" maxlength="7" placeholder="BIOL" style="text-transform:uppercase"> 
+								<input type="text" id="lab0-text" maxlength="7" size="7" placeholder="BIOL" style="text-transform:uppercase"> 
 									<input type="number" id="lab0-num" max="999" placeholder="240"> | 
-								<input type="text" id="lab1-text" maxlength="7" style="text-transform:uppercase"> 
+								<input type="text" id="lab1-text" maxlength="7" size="7" style="text-transform:uppercase"> 
 									<input type="number" id="lab1-num" max="999"> |
-								<input type="text" id="lab2-text" maxlength="7" style="text-transform:uppercase"> 
+								<input type="text" id="lab2-text" maxlength="7" size="7" style="text-transform:uppercase"> 
 									<input type="number" id="lab2-num" max="999"> | 
 							</form>
 
@@ -263,12 +257,10 @@
 				<fieldset>
 					<legend>Averages</legend>
 					<form class="double">
-						<label>Faculty (KI) average:</label><input type="number" id="ki-avg" id="ki-avg" max="100" placeholder="75"><br>
-						<label>Overall average:</label><input type="number" id="over-avg" id="over-avg" max="100">
+						<label>Enter your faculty (KI) average:</label><input type="number" id="ki-avg" id="ki-avg" max="100" placeholder="75"><br>
+						<label>Enter your overall average:</label><input type="number" id="over-avg" id="over-avg" max="100">
 					</form>
-					<ul class="double">
-						<li>These can be found on your transcript: run "unofficial transcript" on <a href="https://quest.pecs.uwaterloo.ca/psp/SS/?cmd=login">Quest</a></li>
-					</ul>
+					<ul class="double"><li>These can be found on your transcript: run "unofficial transcript" on Quest.</li></ul>
 				</fieldset>
 			</div>
 			<br>
