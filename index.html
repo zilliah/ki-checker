@@ -234,22 +234,27 @@
 							</form>
 
 			
-							<form id="lab-input">
+							<div id="lab-input">
 								<h4>Labs and other 0.25 credit courses:</h4>
-								<ul>
-									<li>Only the first 4 lab courses you take (including labs from science courses) count towards your total number of courses.  </li>
+								<form id="lab-codes">
+									<input type="text" id="lab0-text" maxlength="7" placeholder="BIOL" style="text-transform:uppercase"> 
+										<input type="number" id="lab0-num" max="999" placeholder="240"> | 
+									<input type="text" id="lab1-text" maxlength="7" style="text-transform:uppercase"> 
+										<input type="number" id="lab1-num" max="999"> |
+									<input type="text" id="lab2-text" maxlength="7" style="text-transform:uppercase"> 
+										<input type="number" id="lab2-num" max="999"> |
+								</form> 
+
+								<ul class="double lab-double">
+									<li>Remember not to include letter in the course code number (eg, for BIOL 240L, enter BIOL 240)</li>
+									<li>Only the first 4 lab courses you take (including labs from science courses) count towards your total number of courses.</li>
+									<li>Non-lab courses which are also weighted at 0.25 credits (eg, choir) can be entered here, but they may not be counted correctly.</li>
+								</ul>
+								<ul class="double lab-double">
 									<li>Only include labs which are listed as a separate course, weighted at 0.25 credits.  <b>Don't</b> include labs which are included in a 0.5 weight course (eg "BIOL 302 LAB,LEC 0.50"). </li>
 									<li>Courses including labs which are weighted as 0.75 <b>should</b> be entered again here.  For example, "CHE 100 LAB,LEC,TST,TUT 0.75" should be entered into both this section and the previous section.</li>
-									<li>Non-lab courses which are also weighted at 0.25 credits (eg, choir) can be included here.</li>
-									<li>Remember not to include letter in the course code number (eg, for BIOL 240L, enter BIOL 240)</li>
-								</ul>
-								<input type="text" id="lab0-text" maxlength="7" placeholder="BIOL" style="text-transform:uppercase"> 
-									<input type="number" id="lab0-num" max="999" placeholder="240"> | 
-								<input type="text" id="lab1-text" maxlength="7" style="text-transform:uppercase"> 
-									<input type="number" id="lab1-num" max="999"> |
-								<input type="text" id="lab2-text" maxlength="7" style="text-transform:uppercase"> 
-									<input type="number" id="lab2-num" max="999"> | 
-							</form>
+								</ul> <br>
+							</div>
 
 						</div>
 

@@ -57,7 +57,7 @@ $(document).ready(function() {
 	var labIDInt = 0; //change this if start with more than 3 elective boxes
 	$("#add-labs").click( function() {
 		if (labIDInt === 0) { //move the button the first time
-			$("#add-labs").detach().appendTo('#lab-input');
+			$("#add-labs").detach().appendTo('#lab-codes');
 			$("#lab-input").css("display", "inline");
 			labIDInt += 3;
 			//autoscroll only the first time
@@ -69,11 +69,11 @@ $(document).ready(function() {
 				var toAppend = '<input type="text" id="lab' + labIDInt
 				 + '-text" maxlength="7" size="7" style="text-transform:uppercase">' + " "
 				 + '<input type="number" id="lab' + labIDInt + '-num" max="999">' + " | ";
-				$("#lab-input").append(toAppend);
+				$("#lab-codes").append(toAppend);
 				labIDInt++; //change this too if want something other than 3 courses per line
 			}
 		}
-		$("#lab-input").append("<br>");
+		$("#lab-codes").append("<br>");
 	});
 
 

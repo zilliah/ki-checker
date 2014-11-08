@@ -208,6 +208,16 @@ ul.double {
 	margin-left: 40px;
 }
 
+#lab-codes {
+	margin-left: 40px;
+}
+
+.double.lab-double {
+	width: 350px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
 /*averages*/
 #averages ul {
 	padding-top: 15px;
