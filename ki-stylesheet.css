@@ -218,6 +218,22 @@ ul.double {
 	margin-bottom: 20px;
 }
 
+#short-form label {
+	width:200px;
+	text-align: right;
+	margin-right: 5px;
+}
+
+#short-form input {
+	text-align: right;
+	width: 45px;
+}
+
+#short-form ul {
+	margin-left: 10px;
+}
+
+
 /*averages*/
 #averages ul {
 	padding-top: 15px;

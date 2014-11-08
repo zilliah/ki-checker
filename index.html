@@ -208,17 +208,26 @@
 					<br>
 					<div id="elective-options">
 						<div id="short-form">
-							<form>
-								<ul><li>Enter total number of <b>courses</b>, not credits.</li></ul>
-								Total number of elective coures (not including labs):<input type="number" id="elect-total" max="99" placeholder="6"><br>
-								Number of elective coures at 200-level or above (again, not including labs):<input type="number" id="elect-upper" max="99" placeholder="3"><br><br>
-								Number of labs (or other 0.25 credit courses):<input type="number" id="elect-labs" max="99" placeholder="2"><br>
-								How many of those labs were level 200 or above?<input type="number" id="elect-labs-upper" max="99" placeholder="1"><br>
-								<ul>
-									<li>Note: only 4 lab courses (1.0 credits) count towards your total course count.</li>
-									<li>If you have other courses worth 0.25, they may not be counted, so you'll probably want to download the data and fix it up in a spreadsheet.</li>
-								</ul>
+							<ul>
+								<li>Enter total number of <b>courses</b>, not credits.</li>
+								<li>Labs are counted separately.</li>
+							</ul>
+							<form class="double">
+								<label>Number of electives:</label><input type="number" id="elect-total" max="99" placeholder="6"><br>
+								<label>Number of 200+ level electives:</label><input type="number" id="elect-upper" max="99" placeholder="3"><br>
 							</form>
+							<form class="double">
+								<label>Number of labs:</label><input type="number" id="elect-labs" max="99" placeholder="2"><br>
+								<label>Number of 200+ level labs:</label><input type="number" id="elect-labs-upper" max="99" placeholder="1"><br>
+							</form>
+							<ul class="double lab-double">
+								<li>Only the first 4 lab courses you take (including labs from science courses) count towards your total number of courses.</li>
+								<li>Non-lab courses which are also weighted at 0.25 credits (eg, choir) can be entered here, but they may not be counted correctly.</li>
+							</ul>
+							<ul class="double lab-double">
+								<li>Only include labs which are listed as a separate course, weighted at 0.25 credits.  <b>Don't</b> include labs which are included in a 0.5 weight course (eg "BIOL 302 LAB,LEC 0.50"). </li>
+								<li>Courses including labs which are weighted as 0.75 <b>should</b> be counted again here.  For example, "CHE 100 LAB,LEC,TST,TUT 0.75" should be entered into both this section and the previous section.</li>
+							</ul>
 						</div>
 
 						<div id="long-form">
