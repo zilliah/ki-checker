@@ -196,7 +196,11 @@ ul.double {
 }
 
 /*electives*/
-#electives button {
+#e-intro {
+	padding-left: 30px;
+}
+
+#elective-buttons {
 	text-align: center;
 }
 
@@ -222,17 +226,25 @@ ul.double {
 	width:200px;
 	text-align: right;
 	margin-right: 5px;
+	float: none;
 }
 
 #short-form input {
 	text-align: right;
 	width: 45px;
+	float: right;
 }
 
-#short-form ul {
-	margin-left: 10px;
+#short-left {
+	padding-left: 30px;
+	padding-bottom: 0px;
+	width: 280px;
 }
 
+#short-right {
+	padding-left: 80px;
+	padding-bottom: 0px;
+}
 
 /*averages*/
 #averages ul {
