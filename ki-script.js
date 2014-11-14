@@ -639,6 +639,9 @@ $(document).ready(function() {
 				var currDivID = "#list-remaining";
 				if (add === 1) {
 					//delete old things
+					$("#left-remaining").remove();
+					$("#middle-remaining").remove();
+					$("#right-remaining").remove();
 					//make div for integ courses (left column)
 					$(currDivID).append('<div id="left-remaining" class="elect-3col">');
 					currDivID = "#left-remaining";

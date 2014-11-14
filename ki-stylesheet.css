@@ -108,9 +108,10 @@ legend {
 	font-weight: bold;
 }
 
+/* not needed b/c defaults to this
 button {
 	text-align: center;
-}
+}*/
 
 label {
 	float: left;
@@ -283,5 +284,9 @@ ul.double {
 
 #left-remaining {
 	padding-left: 30px;
+}
+
+#get-data {
+	text-align: center;
 }
 /**/
