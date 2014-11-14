@@ -636,48 +636,27 @@ $(document).ready(function() {
 				//this is kind of hacky but whatever
 				var currDivID = "#list-remaining";
 				if (add === 1) {
-					//delete old things
-					$("#left-remaining").remove();
-					$("#middle-remaining").remove();
-					$("#right-remaining").remove();
-					//make div for integ courses (left column)
-					$(currDivID).append('<div id="left-remaining" class="elect-3col">');
-					currDivID = "#left-remaining";
-					$(currDivID).append('<ul id="left-remaining-ul">');
-					currDivID = "#left-remaining-ul";
-					$(currDivID).append($("<li>").text(stillToTake[add]));
-					$(currDivID).append('</ul>');
-					$(currDivID).append('</div>');
-				} else if (add > 1 && add < 11) {
-					//rest of INTEG courses
-					currDivID = "#left-remaining-ul";
-					$(currDivID).append($("<li>").text(stillToTake[add]));
-				} else if (add === 11) {
-					//make div for middle section
-					$(currDivID).append('<div id="middle-remaining" class="elect-3col">');
-					currDivID = "#middle-remaining";
-					$(currDivID).append('<ul id="middle-remaining-ul">');
-					currDivID = "#middle-remaining-ul";
-					$(currDivID).append($("<li>").text(stillToTake[add]));
-					$(currDivID).append('</ul>');
-					$(currDivID).append('</div>');
-				} else if (add > 11 && add < 17) {
-					currDivID = "#middle-remaining-ul";
-					$(currDivID).append($("<li>").text(stillToTake[add]));
-				} else if (add === 17) {
-					//make div for right section
-					$(currDivID).append('<div id="right-remaining" class="elect-3col">');
-					currDivID = "#right-remaining";
-					$(currDivID).append('<ul id="right-remaining-ul">');
-					currDivID = "#right-remaining-ul";
-					$(currDivID).append($("<li>").text(stillToTake[add]));
-					$(currDivID).append('</ul>');
-					$(currDivID).append('</div>');
-				} else {
-					currDivID = "#right-remaining-ul";
-					$(currDivID).append($("<li>").text(stillToTake[add]));
+					//delete list from any prev results
+					$("#left-remaining-ul").empty();
+					$("#middle-remaining-ul").empty();
+					$("#right-remaining-ul").empty();
 				}
-				
+
+					//sort by values of array content
+					var shortCourse = stillToTake[add].substring(0,5);
+					var divID = {"INTEG":"#left-remaining-ul",
+								"Inves":"#middle-remaining-ul",
+								"Engli":"#middle-remaining-ul",
+								"Secon":"#middle-remaining-ul",
+								"Compu":"#right-remaining-ul",
+								"Math":"#right-remaining-ul",
+								"Stats":"#right-remaining-ul",
+								"PHIL":"#right-remaining-ul",
+								"SPCOM":"#right-remaining-ul",
+								"Ethic":"#right-remaining-ul",
+								"Resea":"#right-remaining-ul"
+								}[shortCourse];
+					$(divID).append($("<li>").text(stillToTake[add]));
 			}
 		}
 		$("#uppers").append(upperRemaining);

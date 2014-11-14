@@ -304,7 +304,7 @@
 		<!--below this is "results" page - set to hide until button is pressed
 		is only section of page that prints -->
 		<div id="results">
-			<fieldset>
+			<fieldset id="field-results">
 				<legend>Results</legend>
 
 				<div id="grad">
@@ -320,12 +320,21 @@
 						<li id="reqs-incomplete">You still need to take these required courses:</li>
 						<li id="reqs-complete">You have completed all the specific required courses.  Good job!</li>
 					</ul>
-					<div id="list-remaining"></div>
+					<div id="list-remaining">
+						<div id="left-remaining" class="elect-3col">
+							<ul id="left-remaining-ul"></ul>
+						</div>
+						<div id="middle-remaining" class="elect-3col">
+							<ul id="middle-remaining-ul"></ul>
+						</div><div id="right-remaining" class="elect-3col">
+							<ul id="right-remaining-ul"></ul>
+						</div>
+					</div>
 				</div>
 
 				<div>
 					<h4>Warnings</h4>
-					<ul>
+					<ul id="warnings">
 						<li>These results may be innaccurate in some cases.  It is your responsibility to ensure you have the correct requirements to graduate.</li>
 						<li class="warnings" name="boxWarn" id="warn0">One or more of your boxes had only one box filled in or a number box with a letter in it - this wasn't counted as a course.  Double check and run again if you meant to fill this in.</li>
 						<li class="warnings" name="smallNum" id="warn1">One or more of your course codes was below 100: these courses are generally not taken for credit, and will not be counted.</li>
