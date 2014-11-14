@@ -633,7 +633,8 @@ $(document).ready(function() {
 			$('#reqs-complete').css("display", "list-item");
 			$('#reqs-incomplete').css("display", "none");
 		} else {
-			for (var add = 0; add < stillToTake.length; add++) {
+			for (var add = 1; add < stillToTake.length; add++) {
+				//do a thing to put into columns?
 				 $("#remaining").append($("<li>").text(stillToTake[add]));
 			}
 		}
