@@ -89,13 +89,11 @@ $(document).ready(function() {
 	//output .csv of courses 
 	$("#dl-csv").click( function() {
 		var csvData = [integCourses, invSci, languages, mathCS, otherBreadth, electives, electLabs, stillToTake];
-		var csvContent = ""; //data:text/csv;charset=utf-8,";
-
-		csvData.forEach(function(infoArray, index){
-   			dataString = infoArray.join(",");
-   			csvContent += dataString + "\n";
-		}); 		
-
+		
+		var csvContent = $.map(csvData, function(infoArray, index){
+			return infoArray.join(",");
+		}).join("\n");
+		
 		var pom = document.createElement('a');
 		var blob = new Blob([csvContent],{type: 'text/csv;charset=utf-8;'});
 		var url = URL.createObjectURL(blob);
