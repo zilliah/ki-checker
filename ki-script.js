@@ -634,8 +634,49 @@ $(document).ready(function() {
 			$('#reqs-incomplete').css("display", "none");
 		} else {
 			for (var add = 1; add < stillToTake.length; add++) {
-				//do a thing to put into columns?
-				 $("#remaining").append($("<li>").text(stillToTake[add]));
+				//do a thing to put into columns - split where?
+				//this is kind of hacky but whatever
+				var currDivID = "#list-remaining";
+				if (add === 1) {
+					//delete old things
+					//make div for integ courses (left column)
+					$(currDivID).append('<div id="left-remaining" class="elect-3col">');
+					currDivID = "#left-remaining";
+					$(currDivID).append('<ul id="left-remaining-ul">');
+					currDivID = "#left-remaining-ul";
+					$(currDivID).append($("<li>").text(stillToTake[add]));
+					$(currDivID).append('</ul>');
+					$(currDivID).append('</div>');
+				} else if (add > 1 && add < 11) {
+					//rest of INTEG courses
+					currDivID = "#left-remaining-ul";
+					$(currDivID).append($("<li>").text(stillToTake[add]));
+				} else if (add === 11) {
+					//make div for middle section
+					$(currDivID).append('<div id="middle-remaining" class="elect-3col">');
+					currDivID = "#middle-remaining";
+					$(currDivID).append('<ul id="middle-remaining-ul">');
+					currDivID = "#middle-remaining-ul";
+					$(currDivID).append($("<li>").text(stillToTake[add]));
+					$(currDivID).append('</ul>');
+					$(currDivID).append('</div>');
+				} else if (add > 11 && add < 17) {
+					currDivID = "#middle-remaining-ul";
+					$(currDivID).append($("<li>").text(stillToTake[add]));
+				} else if (add === 17) {
+					//make div for right section
+					$(currDivID).append('<div id="right-remaining" class="elect-3col">');
+					currDivID = "#right-remaining";
+					$(currDivID).append('<ul id="right-remaining-ul">');
+					currDivID = "#right-remaining-ul";
+					$(currDivID).append($("<li>").text(stillToTake[add]));
+					$(currDivID).append('</ul>');
+					$(currDivID).append('</div>');
+				} else {
+					currDivID = "#right-remaining-ul";
+					$(currDivID).append($("<li>").text(stillToTake[add]));
+				}
+				
 			}
 		}
 		$("#uppers").append(upperRemaining);

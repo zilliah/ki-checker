@@ -266,6 +266,22 @@ ul.double {
 	width: 45px;
 }
 
+/*results*/
+#results ul {
+	padding-left:20px;
+	margin-left: 10px;
+}
 
+.elect-3col {
+	width: 200px;
+	float:left;
+}
 
+#rem-descr {
+	margin-bottom: 0px;
+}
+
+#left-remaining {
+	padding-left: 30px;
+}
 /**/
