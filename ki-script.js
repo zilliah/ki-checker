@@ -51,7 +51,7 @@ $(document).ready(function() {
 		$("#long-form-input").append("<br>");
 	});
 
-	//add elective labs - first set
+	//add elective labs
 	//move button
 	//add fields
 	var labIDInt = 0; //change this if start with more than 3 elective boxes
@@ -355,7 +355,6 @@ $(document).ready(function() {
 
  			//inc appropriate counters (if stuff entered)
 			upCounters(mathText, mathNum, mathCS, "Math");			
- 			//TODO: else if empty add to list of things to still take??
 
  			//warn if appropriate
  			if (mathText !== "MATH" && mathText !== "" && mathNum >= 100) {
@@ -410,9 +409,7 @@ $(document).ready(function() {
 			} else {
 				var breName = "Research Methods";
 			}
-
 			upCounters(breText, breNum, otherBreadth, breName);			
-				//TODO: format course codes for placeholders
 		}
 
 		//console.log(otherBreadth);
@@ -423,9 +420,7 @@ $(document).ready(function() {
 		var upperElectives = 0;
 		var totalLabElectives = 0;
 		var upperLabElectives = 0;
-		//TODO - need an option thingey to choose which one
-		//will this need to be done outside this fxn?
-
+		
 		//option 1: enter numbers only-------------------
 		//don't actually /need/ condition, b/c only one actually shows up, but maybe it's a good idea to have it anyway?
 		if (chooseLazy) { 
@@ -524,11 +519,11 @@ $(document).ready(function() {
 						electLabs.push(eLabText + " " + eLabNum + "L");
 					} else if (eLabNum > 0) {
 						WARN.smallNum = true;
-					} else if (eLabNum === 0) { //but nothing in num...give warning....TODO why isn't this working?
+					} else if (eLabNum === 0) { 
 						WARN.boxWarn = true;
 					} 
 				} else {//nothing in text box 
-					if (eLabNum !== "") { //nothing text, something num
+					if (eLabNum > 0) { //nothing text, something num
 						WARN.boxWarn = true;
 					}
 				}
@@ -697,9 +692,9 @@ $(document).ready(function() {
 		console.log(languages);
 		console.log(mathCS);
 		console.log(otherBreadth);
-		console.log(electives);
+		console.log(electives); */
 		console.log(electLabs);
-*/
+
 
 	}; //end of fxn is here-------------------------------------------------------------------------------------------------
 });
