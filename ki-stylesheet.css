@@ -290,8 +290,8 @@ ul.double {
 	margin-left: 75px;
 }
 
-#warnings ul {
-
+#warnings {
+	width: 80%;
 }
 
 #field-results {
